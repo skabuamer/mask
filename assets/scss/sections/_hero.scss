@@ -1,7 +1,6 @@
 /*-----------!-------HERO SECTION STYLE-------!-----------*/
 #hero-section {
     background-color: $color-2;
-    // padding: 120px 0px 50px;
     position: relative;
     z-index: 1;
     &::before {
@@ -28,17 +27,21 @@
         }
     }
     .hero-img {
-        display: flex;
-        justify-content: flex-end;
         img {
             max-width: 100%;
-            margin-right: 260px;
+            margin-left: -273px;
             position: relative;
             z-index: -2;
         }
     }
 }
 
-#hero-section {
-    background-color: $color-2;
+@include xl {
+    #hero-section {
+        .hero-img {
+            img {
+                margin-left: -260px;
+            }
+        }
+    }
 }

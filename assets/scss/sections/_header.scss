@@ -6,7 +6,13 @@ header {
     .nav-item {
         margin-right: 70px;
         a {
-            color: $main-color;
+            color: $color-3;
+            text-transform: capitalize;
+            border-bottom: 5px solid transparent;
+            &:hover {
+                border-bottom: 5px solid #fff;
+                color: $main-color;
+            }
         }
     }
 }

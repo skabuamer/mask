@@ -167,6 +167,12 @@ header .nav-item {
   margin-right: 70px;
 }
 header .nav-item a {
+  color: #aaaaaa;
+  text-transform: capitalize;
+  border-bottom: 5px solid transparent;
+}
+header .nav-item a:hover {
+  border-bottom: 5px solid #fff;
   color: #000;
 }
 
@@ -197,21 +203,18 @@ header .nav-item a {
 #hero-section .hero-content p {
   margin-bottom: 38px;
 }
-#hero-section .hero-img {
-  display: flex;
-  justify-content: flex-end;
-}
 #hero-section .hero-img img {
   max-width: 100%;
-  margin-right: 260px;
+  margin-left: -273px;
   position: relative;
   z-index: -2;
 }
 
-#hero-section {
-  background-color: #fff6ea;
+@media screen and (max-width: 1399px) {
+  #hero-section .hero-img img {
+    margin-left: -260px;
+  }
 }
-
 /*-----------!-------HERO SECTION STYLE-------!-----------*/
 #feature-section {
   padding: 120px 0;
