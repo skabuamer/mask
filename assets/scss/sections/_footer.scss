@@ -1,0 +1,29 @@
+footer {
+    padding: 120px 0;
+    background: $color-4;
+
+    .footer-widget {
+        h4 {
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+        p {
+            color: $main-color;
+        }
+        li {
+            margin-bottom: 0px;
+        }
+        a {
+            color: $main-color;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+
+        .socials {
+            i {
+                margin-right: 30px;
+            }
+        }
+    }
+}

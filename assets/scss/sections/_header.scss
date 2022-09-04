@@ -1,0 +1,12 @@
+/*-----------!-------HEADER SECTION STYLE-------!-----------*/
+header {
+    background-color: $color-2;
+    padding: 35px 0 0;
+
+    .nav-item {
+        margin-right: 70px;
+        a {
+            color: $main-color;
+        }
+    }
+}

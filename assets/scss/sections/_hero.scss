@@ -1,0 +1,44 @@
+/*-----------!-------HERO SECTION STYLE-------!-----------*/
+#hero-section {
+    background-color: $color-2;
+    // padding: 120px 0px 50px;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: $color-2;
+        z-index: -1;
+    }
+
+    .hero-content {
+        padding: 120px 0;
+        position: relative;
+        z-index: 2;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 38px;
+        }
+    }
+    .hero-img {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            max-width: 100%;
+            margin-right: 260px;
+            position: relative;
+            z-index: -2;
+        }
+    }
+}
+
+#hero-section {
+    background-color: $color-2;
+}

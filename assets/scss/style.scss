@@ -23,7 +23,6 @@ Table of Content
 
 */
 
-
 @import "./main/variables";
 @import "./main/normalize";
 @import "./main/typography";
@@ -31,5 +30,10 @@ Table of Content
 @import "./main/breakpoints";
 
 @import "./sections/header";
-
+@import "./sections/hero";
+@import "./sections/feature";
+@import "./sections/item";
+@import "./sections/product";
+@import "./sections/newsletter";
+@import "./sections/advice";
 @import "./sections/footer";

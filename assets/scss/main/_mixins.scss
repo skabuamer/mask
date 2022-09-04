@@ -1,0 +1,28 @@
+@mixin gradient-y {
+    background-image: linear-gradient($main-color, $color-2);
+}
+
+@mixin gradient-y-reverse {
+    background-image: linear-gradient(to top, $main-color, $color-2);
+}
+
+@mixin gradient-x {
+    background-image: linear-gradient(to right, $main-color, $color-2);
+}
+
+@mixin gradient-x-reverse {
+    background-image: linear-gradient(to left, $main-color, $color-2);
+}
+
+@mixin secondary-heading {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 200px;
+    font-weight: 700;
+    color: #c4c4c4;
+    z-index: -1;
+    text-align: center;
+    line-height: 158px;
+    opacity: 9%;
+}

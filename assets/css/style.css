@@ -1,1 +1,367 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* 
+
+Master Stylesheet
+----------------------
+
+Template Name : 
+Description : 
+Author Name : Shaikh Abu Amer
+Author URL : 
+Version : 1.0
+
+
+Table of Content
+-----------------------
+
+1. Typography 
+2. Navigation 
+3.
+4.
+5.
+6.
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  background-color: #f6f6f6;
+  color: #aaaaaa;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*-----------------------------------------------Typography-----------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+h1 {
+  font-size: 85px;
+  line-height: 90px;
+}
+
+h2 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 35px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #aaaaaa;
+  margin-bottom: 10px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+a {
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff6ea;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button:focus,
+button:hover {
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+  outline: none;
+}
+
+.btn-custom {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 60px;
+  height: 60px;
+  padding: 0px 30px;
+  border-radius: 30px;
+  text-transform: capitalize;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading h2 {
+  color: #000;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.section-heading p {
+  color: #aaaaaa;
+}
+
+/*-----------!-------HEADER SECTION STYLE-------!-----------*/
+header {
+  background-color: #fff6ea;
+  padding: 35px 0 0;
+}
+header .nav-item {
+  margin-right: 70px;
+}
+header .nav-item a {
+  color: #000;
+}
+
+/*-----------!-------HERO SECTION STYLE-------!-----------*/
+#hero-section {
+  background-color: #fff6ea;
+  position: relative;
+  z-index: 1;
+}
+#hero-section::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #fff6ea;
+  z-index: -1;
+}
+#hero-section .hero-content {
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+}
+#hero-section .hero-content h1 {
+  margin-bottom: 20px;
+}
+#hero-section .hero-content p {
+  margin-bottom: 38px;
+}
+#hero-section .hero-img {
+  display: flex;
+  justify-content: flex-end;
+}
+#hero-section .hero-img img {
+  max-width: 100%;
+  margin-right: 260px;
+  position: relative;
+  z-index: -2;
+}
+
+#hero-section {
+  background-color: #fff6ea;
+}
+
+/*-----------!-------HERO SECTION STYLE-------!-----------*/
+#feature-section {
+  padding: 120px 0;
+}
+#feature-section .section-heading {
+  margin-bottom: 55px;
+}
+#feature-section .single-feature h3 {
+  margin-bottom: 20px;
+}
+#feature-section .single-feature p {
+  margin-bottom: 40px;
+}
+
+#item-section {
+  padding: 120px 0;
+  background-color: #fff8ee;
+  text-align: center;
+}
+#item-section .section-heading {
+  margin-bottom: 80px;
+}
+#item-section .single-item:hover .single-item-img {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1607843137);
+}
+#item-section .single-item-img {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 10px;
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+#item-section .single-item-img img {
+  display: block;
+  margin: 0 auto;
+}
+#item-section .btn-custom {
+  margin-top: 40px;
+}
+#item-section .btn-custom i {
+  color: #00c5ee;
+}
+
+#product-section {
+  padding: 120px 0;
+}
+#product-section .single-product {
+  margin-bottom: 50px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+#product-section .single-product:hover h4 {
+  opacity: 0;
+}
+#product-section .single-product:hover .single-product-info {
+  opacity: 1;
+}
+#product-section .single-product:hover .single-product-img::after {
+  opacity: 1;
+}
+#product-section .single-product h4 {
+  transition: all 0.4s ease;
+}
+#product-section .single-product-img {
+  background-color: #fff8ee;
+  border-radius: 25px;
+  margin-bottom: 34px;
+  position: relative;
+}
+#product-section .single-product-img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 248, 238, 0.3019607843), #fff8ee);
+  border-radius: 25px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+#product-section .single-product-img img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+#product-section .single-product-info {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  text-align: left;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+#product-section .single-product-info span {
+  display: block;
+  font-weight: 700;
+  color: #000;
+  font-size: 25px;
+}
+#product-section .single-product-info .product-price {
+  color: #aaaaaa;
+}
+
+#newsletter-section .section-heading h2 {
+  margin-bottom: 14px;
+}
+#newsletter-section .section-heading p {
+  line-height: 35px;
+}
+#newsletter-section .section-heading .btn-custom {
+  margin-top: 28px;
+}
+#newsletter-section .newsletter-bg {
+  padding: 50px 0;
+  border-radius: 35px;
+  background-color: #fff8ee;
+}
+
+#advice-section {
+  padding: 120px 0;
+}
+#advice-section .advice-content h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+#advice-section .advice-content p {
+  margin-bottom: 55px;
+}
+
+footer {
+  padding: 120px 0;
+  background: #fff8ee;
+}
+footer .footer-widget h4 {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+footer .footer-widget p {
+  color: #000;
+}
+footer .footer-widget li {
+  margin-bottom: 0px;
+}
+footer .footer-widget a {
+  color: #000;
+}
+footer .footer-widget a:hover {
+  font-weight: 700;
+}
+footer .footer-widget .socials i {
+  margin-right: 30px;
+}/*# sourceMappingURL=style.css.map */
