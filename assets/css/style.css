@@ -215,6 +215,74 @@ header .nav-item a:hover {
     margin-left: -260px;
   }
 }
+@media screen and (max-width: 1199px) {
+  #hero-section .hero-content {
+    padding: 100px 0;
+  }
+  #hero-section .hero-content h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  #hero-section .hero-img img {
+    max-width: none;
+    width: 540px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #hero-section .hero-content {
+    padding: 60px 0;
+  }
+  #hero-section .hero-content h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  #hero-section .hero-img img {
+    max-width: none;
+    width: 480px;
+    margin-left: -230px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #hero-section::before {
+    width: 0%;
+  }
+  #hero-section .hero-content {
+    padding: 40px 0;
+  }
+  #hero-section .hero-content h1 {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
+  #hero-section .hero-content p {
+    margin-bottom: 25px;
+  }
+  #hero-section .hero-img img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #hero-section .hero-content h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+  #hero-section .hero-img {
+    text-align: center;
+  }
+  #hero-section .hero-img img {
+    max-width: 100%;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #hero-section .hero-content {
+    padding: 25px 0;
+  }
+  #hero-section .hero-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
 /*-----------!-------HERO SECTION STYLE-------!-----------*/
 #feature-section {
   padding: 120px 0;
