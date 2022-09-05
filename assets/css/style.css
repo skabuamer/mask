@@ -243,9 +243,6 @@ header .nav-item a:hover {
   }
 }
 @media screen and (max-width: 991px) {
-  #hero-section::before {
-    width: 0%;
-  }
   #hero-section .hero-content {
     padding: 40px 0;
   }
@@ -257,11 +254,11 @@ header .nav-item a:hover {
   #hero-section .hero-content p {
     margin-bottom: 25px;
   }
-  #hero-section .hero-img img {
-    margin-left: 0;
-  }
 }
 @media screen and (max-width: 767px) {
+  #hero-section::before {
+    width: 0%;
+  }
   #hero-section .hero-content h1 {
     font-size: 45px;
     line-height: 55px;
@@ -272,6 +269,7 @@ header .nav-item a:hover {
   #hero-section .hero-img img {
     max-width: 100%;
     width: 400px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 575px) {
@@ -297,6 +295,49 @@ header .nav-item a:hover {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1399px) {
+  #feature-section .section-heading h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  #feature-section .single-feature h3 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #feature-section {
+    padding: 60px 0;
+  }
+  #feature-section .section-heading h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #feature-section .single-feature h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #feature-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #feature-section .single-feature h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #feature-section .section-heading h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  #feature-section .single-feature h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 #item-section {
   padding: 120px 0;
   background-color: #fff8ee;

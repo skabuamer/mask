@@ -15,3 +15,76 @@
         }
     }
 }
+
+@include xl {
+    #feature-section {
+        .section-heading {
+            h2 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+        }
+
+        .single-feature {
+            h3 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@include md {
+    #feature-section {
+        padding: 60px 0;
+        .section-heading {
+            h2 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+
+        .single-feature {
+            h3 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@include sm {
+    #feature-section {
+        .section-heading {
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        .single-feature {
+            h3 {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+@include xxs {
+    #feature-section {
+        .section-heading {
+            h2 {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+
+        .single-feature {
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+}
