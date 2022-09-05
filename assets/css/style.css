@@ -88,6 +88,11 @@ p {
   color: #aaaaaa;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 575px) {
+  p {
+    font-size: 16px;
+  }
+}
 
 h1 a,
 h2 a,
@@ -142,6 +147,13 @@ a:visited {
   background-color: #fff;
   color: #000;
 }
+@media screen and (max-width: 991px) {
+  .btn-custom {
+    font-size: 15px;
+    line-height: 50px;
+    height: 50px;
+  }
+}
 
 .section-heading {
   text-align: center;
@@ -156,6 +168,12 @@ a:visited {
 
 .section-heading p {
   color: #aaaaaa;
+}
+
+@media screen and (max-width: 479px) {
+  .col-xxs-12 {
+    width: 100%;
+  }
 }
 
 /*-----------!-------HEADER SECTION STYLE-------!-----------*/
@@ -346,6 +364,9 @@ header .nav-item a:hover {
 #item-section .section-heading {
   margin-bottom: 80px;
 }
+#item-section .single-item {
+  text-align: left;
+}
 #item-section .single-item:hover .single-item-img {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1607843137);
 }
@@ -367,8 +388,53 @@ header .nav-item a:hover {
   color: #00c5ee;
 }
 
+@media screen and (max-width: 1399px) {
+  #item-section .section-heading h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #item-section .single-item h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #item-section {
+    padding: 60px 0;
+  }
+  #item-section .section-heading {
+    margin-bottom: 50px;
+  }
+  #item-section .section-heading h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #item-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #item-section .single-item {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #item-section .single-item h4 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  #item-section .single-item-img {
+    margin-bottom: 10px;
+  }
+}
 #product-section {
   padding: 120px 0;
+}
+#product-section .section-heading {
+  margin-bottom: 70px;
 }
 #product-section .single-product {
   margin-bottom: 50px;
@@ -428,6 +494,56 @@ header .nav-item a:hover {
   color: #aaaaaa;
 }
 
+@media screen and (max-width: 1399px) {
+  #product-section .section-heading h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #product-section .single-product h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #product-section .single-product-info span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #product-section {
+    padding: 60px 0;
+  }
+  #product-section .section-heading h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #product-section .single-product-img {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #product-section .section-heading {
+    margin-bottom: 45px;
+  }
+  #product-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #product-section .single-product {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #product-section .single-product h4 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  #product-section .single-product-info span {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 #newsletter-section .section-heading h2 {
   margin-bottom: 14px;
 }
@@ -443,6 +559,32 @@ header .nav-item a:hover {
   background-color: #fff8ee;
 }
 
+@media screen and (max-width: 1399px) {
+  #newsletter-section .section-heading h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  #newsletter-section .section-heading .btn-custom {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  #newsletter-section .newsletter-bg {
+    padding: 35px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  #newsletter-section .section-heading h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #newsletter-section .section-heading h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 #advice-section {
   padding: 120px 0;
 }
@@ -454,6 +596,26 @@ header .nav-item a:hover {
   margin-bottom: 55px;
 }
 
+@media screen and (max-width: 1199px) {
+  #advice-section .advice-content p {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #advice-section {
+    padding: 60px 0;
+  }
+  #advice-section .advice-content h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #advice-section .advice-content h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 footer {
   padding: 120px 0;
   background: #fff8ee;
@@ -474,6 +636,32 @@ footer .footer-widget a {
 footer .footer-widget a:hover {
   font-weight: 700;
 }
+footer .footer-widget .socials {
+  margin-top: 20px;
+}
 footer .footer-widget .socials i {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  footer {
+    padding: 60px 0;
+  }
+  footer .footer-widget {
+    text-align: center;
+  }
+  footer .footer-widget .socials i {
+    margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 479px) {
+  footer .footer-widget h4 {
+    margin-bottom: 10px;
+  }
+  footer .footer-widget a {
+    font-size: 16px;
+  }
+  footer .row > * {
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

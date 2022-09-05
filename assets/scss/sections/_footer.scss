@@ -21,9 +21,41 @@ footer {
         }
 
         .socials {
+            margin-top: 20px;
             i {
                 margin-right: 30px;
             }
+        }
+    }
+}
+
+@include md {
+    footer {
+        padding: 60px 0;
+        .footer-widget {
+            text-align: center;
+
+            .socials {
+                i {
+                    margin: 0px 15px;
+                }
+            }
+        }
+    }
+}
+
+@include xxs {
+    footer {
+        .footer-widget {
+            h4 {
+                margin-bottom: 10px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+        .row > * {
+            margin-top: 25px;
         }
     }
 }

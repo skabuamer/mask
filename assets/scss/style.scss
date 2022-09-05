@@ -23,11 +23,11 @@ Table of Content
 
 */
 
+@import "./main/breakpoints";
 @import "./main/variables";
 @import "./main/normalize";
 @import "./main/typography";
 @import "./main/global";
-@import "./main/breakpoints";
 
 @import "./sections/header";
 @import "./sections/hero";
