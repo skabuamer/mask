@@ -1,6 +1,55 @@
 #advice-section {
     padding: 120px 0;
 
+    .advice-img-container {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 120px;
+            left: 37px;
+            height: 85%;
+            width: 75%;
+            border: 8px solid #fcefde;
+            border-radius: 200px 10px 10px 10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 80px;
+            right: 161px;
+            width: 30px;
+            height: 85%;
+            background: $color-4;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+    .advice-img-bg {
+        overflow: hidden;
+        position: relative;
+        width: 70%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $color-4;
+            border-radius: 200px 0px 0px 10px;
+        }
+
+        img {
+            max-width: 100%;
+            transform: translateX(260px);
+            overflow: hidden;
+        }
+    }
+
     .advice-content {
         h2 {
             font-size: 40px;
@@ -12,8 +61,36 @@
     }
 }
 
+@include xl {
+    #advice-section {
+        .advice-img-container {
+            &::after {
+                right: 134px;
+            }
+        }
+
+        .advice-img-bg {
+            img {
+                transform: translateX(200px);
+            }
+        }
+    }
+}
+
 @include lg {
     #advice-section {
+        .advice-img-container {
+            &::after {
+                right: 107px;
+            }
+        }
+
+        .advice-img-bg {
+            img {
+                transform: translateX(150px);
+            }
+        }
+
         .advice-content {
             p {
                 margin-bottom: 35px;
@@ -25,6 +102,27 @@
 @include md {
     #advice-section {
         padding: 60px 0;
+
+        .advice-img-container {
+            margin-bottom: 90px;
+
+            &::before {
+                top: 125px;
+                left: 115px;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .advice-img-bg {
+            margin: 0 auto;
+            img {
+                transform: translateX(70px);
+            }
+        }
+
         .advice-content {
             h2 {
                 font-size: 35px;
@@ -34,12 +132,59 @@
     }
 }
 
-@include md {
+@include sm {
     #advice-section {
+        .advice-img-container {
+            margin-bottom: 70px;
+            &::before {
+                width: 100%;
+                left: 25px;
+                top: 110px;
+            }
+        }
+
+        .advice-img-bg {
+            width: 100%;
+
+            img {
+                transform: translateX(85px);
+            }
+        }
         .advice-content {
             h2 {
                 font-size: 30px;
                 line-height: 40px;
+            }
+        }
+    }
+}
+
+@include xs {
+    #advice-section {
+        .advice-img-container {
+        }
+        .advice-img-bg {
+            img {
+                transform: translateX(60px);
+            }
+        }
+    }
+}
+
+@include xxs {
+    #advice-section {
+        .advice-img-container {
+            margin-bottom: 55px;
+
+            &::before {
+                top: 92px;
+            }
+        }
+
+        .advice-img-bg {
+            img {
+                transform: translateX(15px);
+                max-width: 90%;
             }
         }
     }

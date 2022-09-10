@@ -306,11 +306,17 @@ header .nav-item a:hover {
 #feature-section .section-heading {
   margin-bottom: 55px;
 }
+#feature-section .single-feature {
+  margin-bottom: 193px;
+}
 #feature-section .single-feature h3 {
   margin-bottom: 20px;
 }
 #feature-section .single-feature p {
   margin-bottom: 40px;
+}
+#feature-section .last-feature {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1399px) {
@@ -588,6 +594,49 @@ header .nav-item a:hover {
 #advice-section {
   padding: 120px 0;
 }
+#advice-section .advice-img-container {
+  position: relative;
+}
+#advice-section .advice-img-container::before {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: 37px;
+  height: 85%;
+  width: 75%;
+  border: 8px solid #fcefde;
+  border-radius: 200px 10px 10px 10px;
+}
+#advice-section .advice-img-container::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 161px;
+  width: 30px;
+  height: 85%;
+  background: #fff8ee;
+  border-radius: 0 10px 10px 0;
+}
+#advice-section .advice-img-bg {
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+}
+#advice-section .advice-img-bg::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff8ee;
+  border-radius: 200px 0px 0px 10px;
+}
+#advice-section .advice-img-bg img {
+  max-width: 100%;
+  transform: translateX(260px);
+  overflow: hidden;
+}
 #advice-section .advice-content h2 {
   font-size: 40px;
   margin-bottom: 15px;
@@ -596,7 +645,21 @@ header .nav-item a:hover {
   margin-bottom: 55px;
 }
 
+@media screen and (max-width: 1399px) {
+  #advice-section .advice-img-container::after {
+    right: 134px;
+  }
+  #advice-section .advice-img-bg img {
+    transform: translateX(200px);
+  }
+}
 @media screen and (max-width: 1199px) {
+  #advice-section .advice-img-container::after {
+    right: 107px;
+  }
+  #advice-section .advice-img-bg img {
+    transform: translateX(150px);
+  }
   #advice-section .advice-content p {
     margin-bottom: 35px;
   }
@@ -605,15 +668,62 @@ header .nav-item a:hover {
   #advice-section {
     padding: 60px 0;
   }
+  #advice-section .advice-img-container {
+    margin-bottom: 90px;
+  }
+  #advice-section .advice-img-container::before {
+    top: 125px;
+    left: 115px;
+  }
+  #advice-section .advice-img-container::after {
+    display: none;
+  }
+  #advice-section .advice-img-bg {
+    margin: 0 auto;
+  }
+  #advice-section .advice-img-bg img {
+    transform: translateX(70px);
+  }
   #advice-section .advice-content h2 {
     font-size: 35px;
     line-height: 45px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
+  #advice-section .advice-img-container {
+    margin-bottom: 70px;
+  }
+  #advice-section .advice-img-container::before {
+    width: 100%;
+    left: 25px;
+    top: 110px;
+  }
+  #advice-section .advice-img-bg {
+    width: 100%;
+  }
+  #advice-section .advice-img-bg img {
+    transform: translateX(85px);
+  }
   #advice-section .advice-content h2 {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #advice-section .advice-img-bg img {
+    transform: translateX(60px);
+  }
+}
+@media screen and (max-width: 479px) {
+  #advice-section .advice-img-container {
+    margin-bottom: 55px;
+  }
+  #advice-section .advice-img-container::before {
+    top: 92px;
+  }
+  #advice-section .advice-img-bg img {
+    transform: translateX(15px);
+    max-width: 90%;
   }
 }
 footer {
