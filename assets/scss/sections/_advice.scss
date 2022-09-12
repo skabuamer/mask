@@ -104,11 +104,9 @@
         padding: 60px 0;
 
         .advice-img-container {
-            margin-bottom: 90px;
-
             &::before {
-                top: 125px;
-                left: 115px;
+                top: 70px;
+                left: 60px;
             }
 
             &::after {
@@ -118,8 +116,11 @@
 
         .advice-img-bg {
             margin: 0 auto;
+            &::before {
+                border-radius: 200px 10px 10px 10px;
+            }
             img {
-                transform: translateX(70px);
+                transform: translateX(92px);
             }
         }
 
@@ -162,8 +163,15 @@
 @include xs {
     #advice-section {
         .advice-img-container {
+            &::before {
+                top: 112px;
+                left: 10px;
+            }
         }
         .advice-img-bg {
+            &::before {
+                width: 95%;
+            }
             img {
                 transform: translateX(60px);
             }

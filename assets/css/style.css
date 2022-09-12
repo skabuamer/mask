@@ -307,12 +307,12 @@ header .nav-item a:hover {
   margin-bottom: 55px;
 }
 #feature-section .single-feature {
-  margin-bottom: 193px;
+  margin-bottom: 108px;
 }
-#feature-section .single-feature h3 {
+#feature-section .single-feature-content h3 {
   margin-bottom: 20px;
 }
-#feature-section .single-feature p {
+#feature-section .single-feature-content p {
   margin-bottom: 40px;
 }
 #feature-section .last-feature {
@@ -337,9 +337,18 @@ header .nav-item a:hover {
     font-size: 35px;
     line-height: 45px;
   }
+  #feature-section .single-feature {
+    margin-bottom: 70px;
+  }
   #feature-section .single-feature h3 {
     font-size: 30px;
     line-height: 40px;
+  }
+  #feature-section .single-feature p {
+    margin-bottom: 25px;
+  }
+  #feature-section .last-feature {
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 767px) {
@@ -347,9 +356,16 @@ header .nav-item a:hover {
     font-size: 30px;
     line-height: 40px;
   }
+  #feature-section .single-feature {
+    margin-bottom: 60px;
+    text-align: center;
+  }
   #feature-section .single-feature h3 {
     font-size: 25px;
     line-height: 35px;
+  }
+  #feature-section .single-feature-img {
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -668,12 +684,9 @@ header .nav-item a:hover {
   #advice-section {
     padding: 60px 0;
   }
-  #advice-section .advice-img-container {
-    margin-bottom: 90px;
-  }
   #advice-section .advice-img-container::before {
-    top: 125px;
-    left: 115px;
+    top: 70px;
+    left: 60px;
   }
   #advice-section .advice-img-container::after {
     display: none;
@@ -681,8 +694,11 @@ header .nav-item a:hover {
   #advice-section .advice-img-bg {
     margin: 0 auto;
   }
+  #advice-section .advice-img-bg::before {
+    border-radius: 200px 10px 10px 10px;
+  }
   #advice-section .advice-img-bg img {
-    transform: translateX(70px);
+    transform: translateX(92px);
   }
   #advice-section .advice-content h2 {
     font-size: 35px;
@@ -710,6 +726,13 @@ header .nav-item a:hover {
   }
 }
 @media screen and (max-width: 575px) {
+  #advice-section .advice-img-container::before {
+    top: 112px;
+    left: 10px;
+  }
+  #advice-section .advice-img-bg::before {
+    width: 95%;
+  }
   #advice-section .advice-img-bg img {
     transform: translateX(60px);
   }
