@@ -13,25 +13,32 @@
         <!-- FONT-AWESOME CSS -->
         <link rel="stylesheet" href="assets/vendor/css/all.min.css" />
 
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
+        <div class="preloader">
+            <div class="loader">
+                <img src="assets/img/preloader.gif" alt="" />
+            </div>
+        </div>
+
         <!-------------!-------HERO SECTION START-------!------------->
         <header>
             <div class="container">
                 <div class="row align-items-center">
                     <!-- LOGO AND COLLAPSE BUTTON  -->
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-sm-11 col-10">
                         <div class="row align-items-center">
                             <div class="col-lg-12 col-9">
-                                <div class="logo-container">
-                                    <img src="assets/img/logo.png" alt="logo" />
-                                </div>
+                                <a href="#" class="logo">Save Life</a>
                             </div>
 
                             <div class="col-3 d-lg-none d-flex justify-content-end">
-                                <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-menu" aria-controls="nav-menu">
+                                <button class="collapse-btn btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-menu" aria-controls="nav-menu">
                                     <i class="fa-solid fa-bars"></i>
                                 </button>
                             </div>
@@ -39,15 +46,15 @@
                     </div>
 
                     <!-- NAVBAR MENU -->
-                    <div class="col-lg-10">
+                    <div class="col-lg-9 order-lg-2 order-3">
                         <div class="navbar p-0 navbar-expand-lg">
                             <div class="offcanvas offcanvas-start" tabindex="-1" id="nav-menu" aria-labelledby="nav-menuLabel">
                                 <div class="offcanvas-header">
-                                    <img class="offcanvas-title" id="nav-menuLabel" src="assets/img/logo.png" alt="logo" />
+                                    <a class="offcanvas-title logo" id="nav-menuLabel" href="#">Save Life</a>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <ul class="navbar-nav me-xl-auto mx-xl-0 mx-lg-auto align-items-lg-end">
+                                    <ul class="navbar-nav me-xl-auto mx-xl-0 mx-lg-auto align-items-center">
                                         <li class="nav-item">
                                             <a href="#">Home</a>
                                         </li>
@@ -61,10 +68,16 @@
                                             <a href="#who-section">WHO</a>
                                         </li>
                                     </ul>
+
                                     <a class="btn-custom" href="#">join now</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- light/dark toggler -->
+                    <div class="light__dark__toggle col-1 order-lg-3 order-2">
+                        <i class="fa-solid fa-moon"></i>
                     </div>
                 </div>
             </div>
@@ -75,16 +88,16 @@
             <!-------------!-------HERO SECTION START-------!------------->
             <section id="hero-section">
                 <div class="container">
-                    <div class="row align-items-end">
+                    <div class="row align-items-lg-end align-items-center">
                         <div class="col-md-6">
-                            <div class="hero-content">
+                            <div class="hero-content" data-aos="fade-up">
                                 <h1>Use Mask Save life</h1>
                                 <p>There's a simple thing we can all do to save tens of thousands of lives. Wear a face mask in public. According to the Institute for</p>
                                 <a href="#" class="btn-custom">buy now</a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="hero-img">
+                            <div class="hero-img" data-aos="fade-right">
                                 <img src="assets/img/mask-wear/hero.png" alt="" />
                             </div>
                         </div>
@@ -98,21 +111,18 @@
                 <div class="container">
                     <div class="section-heading">
                         <h2>Mask With Technology</h2>
-                        <p>
-                            The sensor technology could also be used to create clothing that detects a variety of <br />
-                            pathogens and other threats. Anne Trafton | MIT News ...
-                        </p>
+                        <p>The sensor technology could also be used to create clothing that detects a variety of pathogens and other threats. Anne Trafton | MIT News ...</p>
                     </div>
 
                     <div class="single-feature row align-items-center">
                         <div class="col-lg-7 col-md-6">
-                            <div class="single-feature-img">
+                            <div class="single-feature-img" data-aos="fade-right">
                                 <img src="assets/img/feature/feature-img-1.png" alt="" class="img-fluid" />
                             </div>
                         </div>
 
                         <div class="col-lg-5 col-md-6">
-                            <div class="single-feature-content">
+                            <div class="single-feature-content" data-aos="fade-left">
                                 <h3>Mi Air Mask</h3>
                                 <p>Xiaomi Mi Purely Anti-Pollution Mask Filter (10 Pcs) · Nano-fiber electret filtering echnology, the air filter is apparently able</p>
                                 <a href="#" class="btn-custom">learn more</a>
@@ -122,14 +132,14 @@
 
                     <div class="single-feature last-feature row align-items-center">
                         <div class="col-md-6 order-md-3 order-4">
-                            <div class="single-feature-content">
+                            <div class="single-feature-content" data-aos="fade-right">
                                 <h3>Xiaomi mi Filter Mask</h3>
                                 <p>Xiaomi Mi Purely Anti-Pollution Mask Filter (10 Pcs) · Nano-fiber electret filtering technology, the air filter is apparently able to achieve PM2. · Compact ...</p>
                                 <a href="#" class="btn-custom">learn more</a>
                             </div>
                         </div>
 
-                        <div class="col-md-6 order-md-4 order-3">
+                        <div class="col-md-6 order-md-4 order-3" data-aos="fade-left">
                             <div class="single-feature-img">
                                 <img src="assets/img/feature/feature-img-2.png" alt="" class="img-fluid" />
                             </div>
@@ -144,15 +154,12 @@
                 <div class="container">
                     <div class="section-heading">
                         <h2>Our Popular Item</h2>
-                        <p>
-                            List of trending products to sell online at your online ecommerce and dropshipping store. <br />
-                            Special focus
-                        </p>
+                        <p>List of trending products to sell online at your online ecommerce and dropshipping store. Special focus</p>
                     </div>
 
                     <div class="row gx-lg-5 gx-4">
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-item">
+                            <div class="single-item" data-aos="fade-up">
                                 <div class="single-item-img">
                                     <img src="assets/img/mask/mask-1.png" alt="" class="img-fluid" />
                                 </div>
@@ -161,7 +168,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-item">
+                            <div class="single-item" data-aos="fade-up">
                                 <div class="single-item-img">
                                     <img src="assets/img/mask/mask-2.png" alt="" class="img-fluid" />
                                 </div>
@@ -170,7 +177,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-item">
+                            <div class="single-item" data-aos="fade-up">
                                 <div class="single-item-img">
                                     <img src="assets/img/mask/mask-3.png" alt="" class="img-fluid" />
                                 </div>
@@ -189,15 +196,12 @@
                 <div class="container">
                     <div class="section-heading">
                         <h2>Product</h2>
-                        <p>
-                            In marketing, a product is an object, or system, or service made available <br />
-                            for consumer use as of the consumer demand; it is
-                        </p>
+                        <p>In marketing, a product is an object, or system, or service made available for consumer use as of the consumer demand; it is</p>
                     </div>
 
                     <div class="row">
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-product">
+                            <div class="single-product" data-aos="fade-up">
                                 <div class="single-product-img">
                                     <img src="assets/img/mask-wear/mask-wear-1.png" alt="" />
                                     <div class="single-product-info">
@@ -210,7 +214,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-product">
+                            <div class="single-product" data-aos="fade-up">
                                 <div class="single-product-img">
                                     <img src="assets/img/mask-wear/mask-wear-2.png" alt="" />
                                     <div class="single-product-info">
@@ -223,7 +227,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-product">
+                            <div class="single-product" data-aos="fade-up">
                                 <div class="single-product-img">
                                     <img src="assets/img/mask-wear/mask-wear-3.png" alt="" />
                                     <div class="single-product-info">
@@ -236,7 +240,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-product">
+                            <div class="single-product" data-aos="fade-up">
                                 <div class="single-product-img">
                                     <img src="assets/img/mask-wear/mask-wear-4.png" alt="" />
                                     <div class="single-product-info">
@@ -249,7 +253,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-product">
+                            <div class="single-product" data-aos="fade-up">
                                 <div class="single-product-img">
                                     <img src="assets/img/mask-wear/mask-wear-3.png" alt="" />
                                     <div class="single-product-info">
@@ -262,7 +266,7 @@
                         </div>
 
                         <div class="col-md-4 col-6 col-xxs-12">
-                            <div class="single-product">
+                            <div class="single-product" data-aos="fade-up">
                                 <div class="single-product-img">
                                     <img src="assets/img/mask-wear/mask-wear-2.png" alt="" />
                                     <div class="single-product-info">
@@ -284,10 +288,7 @@
                     <div class="newsletter-bg">
                         <div class="section-heading">
                             <h2>Newsletter And Our Update</h2>
-                            <p>
-                                Can face masks help slow the spread of the virus that causes <br />
-                                coronavirus disease 2019 (COVID-19)? Yes.
-                            </p>
+                            <p>Can face masks help slow the spread of the virus that causes coronavirus disease 2019 (COVID-19)? Yes.</p>
                             <a href="#" class="btn-custom">join now</a>
                         </div>
                     </div>
@@ -300,7 +301,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-5">
-                            <div class="advice-img-container">
+                            <div class="advice-img-container" data-aos="fade-right">
                                 <div class="advice-img-bg">
                                     <img src="assets/img/doctor.png" alt="image" />
                                 </div>
@@ -308,7 +309,7 @@
                         </div>
 
                         <div class="col-lg-6 col-md-7">
-                            <div class="advice-content">
+                            <div class="advice-content" data-aos="fade-left">
                                 <h2>The advice of doctors for the use of masks</h2>
                                 <p>Xiaomi Mi Purely Anti-Pollution Mask Filter (10 Pcs) · Nano-fiber electret filtering technology, the air filter is apparently able to achieve PM2. · Compact ...</p>
                                 <a href="#" class="btn-custom">learn more</a>
@@ -373,6 +374,8 @@
         </footer>
         <!-------------!-------FOOTER SECTION END-------!------------->
 
+        <div class="back__to__top">&uarr;</div>
+
         <!-- jquery JS -->
         <script src="assets/vendor/js/jquery.min.js"></script>
 
@@ -382,8 +385,8 @@
         <!-- JS -->
         <script src=""></script>
 
-        <!-- JS -->
-        <script src=""></script>
+        <!--AOS JS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
         <!-- CUSTOM JS -->
         <script src="assets/js/main.js"></script>

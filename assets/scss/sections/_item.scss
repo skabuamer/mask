@@ -1,6 +1,6 @@
 #item-section {
     padding: 120px 0;
-    background-color: $color-4;
+    background-color: $color-2;
     text-align: center;
 
     .section-heading {
@@ -41,8 +41,8 @@
     #item-section {
         .section-heading {
             h2 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 35px;
+                line-height: 45px;
             }
         }
     }
@@ -76,8 +76,8 @@
     #item-section {
         .section-heading {
             h2 {
-                font-size: 30px;
-                line-height: 40px;
+                // font-size: 30px;
+                // line-height: 40px;
             }
         }
         .single-item {
@@ -88,6 +88,12 @@
 
 @include xxs {
     #item-section {
+        .section-heading {
+            h2 {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
         .single-item {
             h4 {
                 font-size: 15px;

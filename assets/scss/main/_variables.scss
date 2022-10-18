@@ -1,8 +1,62 @@
 // colors
-$main-color: #000;
-$color-2: #fff6ea;
-$color-3: #aaaaaa;
-$color-4: #fff8ee;
+:root {
+    --body-bg: #f6f6f6;
+    --main-color: #000;
+    --third-color: #d9cbb8;
+    --clr-2: #fff6ea;
+    --clr-3: #aaaaaa;
+    --clr-4: #fffff8;
+    --clr-5: #d9cbb8;
+    --white: #fff;
+    --black: #000;
+}
+
+.dark-mode {
+    --main-color: #fff6ea;
+    --body-bg: rgb(53, 53, 53);
+    --clr-2: rgb(33, 33, 37);
+    --clr-3: #b9b9b9;
+    --clr-5: #867e72;
+    --third-color: #6b6b6b;
+}
+
+$body-bg: var(--body-bg);
+$main-color: var(--main-color);
+$third-color: var(--third-color);
+$color-2: var(--clr-2);
+$color-3: var(--clr-3);
+$color-4: var(--clr-4);
+$color-5: var(--clr-5);
+$black: var(--black);
+$white: var(--white);
 
 // fonts
 $main-font: "Poppins", sans-serif;
+
+// $body-bg: #f6f6f6;
+// $color-2: #fff6ea;
+// $color-3: #aaaaaa;
+// $color-4: #fff8ee;
+// $black: #000;
+// $white: #fff;
+
+// .dark-mode {
+//     $body-bg: rgb(53, 53, 53);
+//     $color-2: rgb(33, 33, 37);
+
+//     // :root {
+//     --main-color: #{$main-color};
+//     --clr-2: #{$color-2};
+//     --clr-3: #{$color-3};
+//     --white: #{$white};
+//     --black: #{$black};
+//     // }
+// }
+
+// :root {
+//     --main-color: #{$main-color};
+//     --clr-2: #{$color-2};
+//     --clr-3: #{$color-3};
+//     --white: #{$white};
+//     --black: #{$black};
+// }

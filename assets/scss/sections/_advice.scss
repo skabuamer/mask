@@ -1,5 +1,6 @@
 #advice-section {
     padding: 120px 0;
+    overflow: hidden;
 
     .advice-img-container {
         position: relative;
@@ -22,7 +23,7 @@
             right: 161px;
             width: 30px;
             height: 85%;
-            background: $color-4;
+            background: $color-2;
             border-radius: 0 10px 10px 0;
         }
     }
@@ -39,7 +40,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: $color-4;
+            background: $color-2;
             border-radius: 200px 0px 0px 10px;
         }
 
@@ -52,7 +53,8 @@
 
     .advice-content {
         h2 {
-            font-size: 40px;
+            font-size: 35px;
+            line-height: 45px;
             margin-bottom: 15px;
         }
         p {
@@ -153,8 +155,8 @@
         }
         .advice-content {
             h2 {
-                font-size: 30px;
-                line-height: 40px;
+                // font-size: 30px;
+                // line-height: 40px;
             }
         }
     }
@@ -193,6 +195,12 @@
             img {
                 transform: translateX(15px);
                 max-width: 90%;
+            }
+        }
+        .advice-content {
+            h2 {
+                font-size: 25px;
+                line-height: 35px;
             }
         }
     }

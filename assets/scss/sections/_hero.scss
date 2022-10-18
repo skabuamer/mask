@@ -3,6 +3,8 @@
     background-color: $color-2;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+
     &::before {
         content: "";
         position: absolute;
@@ -11,7 +13,7 @@
         bottom: 0;
         left: 0;
         background-color: $color-2;
-        z-index: -1;
+        z-index: 1;
     }
 
     .hero-content {
@@ -38,6 +40,12 @@
 
 @include xl {
     #hero-section {
+        .hero-content {
+            h1 {
+                font-size: 80px;
+                line-height: 85px;
+            }
+        }
         .hero-img {
             img {
                 margin-left: -260px;
@@ -129,7 +137,7 @@
     }
 }
 
-@include xs {
+@include xxs {
     #hero-section {
         .hero-content {
             padding: 25px 0;

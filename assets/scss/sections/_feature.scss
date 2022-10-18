@@ -1,6 +1,7 @@
 /*-----------!-------HERO SECTION STYLE-------!-----------*/
 #feature-section {
     padding: 120px 0;
+    overflow-x: hidden;
 
     .section-heading {
         margin-bottom: 55px;
@@ -28,15 +29,15 @@
     #feature-section {
         .section-heading {
             h2 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 35px;
+                line-height: 45px;
             }
         }
 
         .single-feature {
             h3 {
-                font-size: 35px;
-                line-height: 45px;
+                font-size: 30px;
+                line-height: 40px;
             }
         }
     }
@@ -73,8 +74,8 @@
     #feature-section {
         .section-heading {
             h2 {
-                font-size: 30px;
-                line-height: 40px;
+                // font-size: 30px;
+                // line-height: 40px;
             }
         }
 

@@ -14,7 +14,7 @@
     .newsletter-bg {
         padding: 50px 0;
         border-radius: 35px;
-        background-color: $color-4;
+        background-color: $color-2;
     }
 }
 
@@ -22,8 +22,8 @@
     #newsletter-section {
         .section-heading {
             h2 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 35px;
+                line-height: 45px;
             }
 
             .btn-custom {
@@ -52,12 +52,16 @@
     }
 }
 
-@include sm {
+@include xs {
     #newsletter-section {
         .section-heading {
             h2 {
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 25px;
+                line-height: 35px;
+            }
+
+            p {
+                line-height: 30px;
             }
         }
     }

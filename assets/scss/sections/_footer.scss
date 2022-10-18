@@ -1,6 +1,6 @@
 footer {
     padding: 120px 0;
-    background: $color-4;
+    background: $color-2;
 
     .footer-widget {
         h4 {
@@ -16,7 +16,7 @@ footer {
         a {
             color: $main-color;
             &:hover {
-                font-weight: 700;
+                color: $color-5;
             }
         }
 

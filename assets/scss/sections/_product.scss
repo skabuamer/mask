@@ -27,7 +27,7 @@
     }
 
     .single-product-img {
-        background-color: $color-4;
+        background-color: $color-2;
         border-radius: 25px;
         margin-bottom: 34px;
         position: relative;
@@ -39,7 +39,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(to bottom, #fff8ee4d, #fff8ee);
+            background: linear-gradient(to bottom, #fff8ee13, $color-2);
             border-radius: 25px;
             opacity: 0;
             transition: all 0.4s ease;
@@ -77,8 +77,8 @@
     #product-section {
         .section-heading {
             h2 {
-                font-size: 40px;
-                line-height: 50px;
+                font-size: 35px;
+                line-height: 45px;
             }
         }
     }
@@ -122,8 +122,8 @@
         .section-heading {
             margin-bottom: 45px;
             h2 {
-                font-size: 30px;
-                line-height: 40px;
+                // font-size: 30px;
+                // line-height: 40px;
             }
         }
 
@@ -135,6 +135,12 @@
 
 @include xxs {
     #product-section {
+        .section-heading {
+            h2 {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
         .single-product {
             h4 {
                 font-size: 15px;

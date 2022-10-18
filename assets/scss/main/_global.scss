@@ -12,10 +12,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: $color-2;
-}
-
 ul,
 ol {
     margin: 0;
@@ -37,7 +33,7 @@ a:visited {
 .btn-custom {
     display: inline-block;
     background-color: $main-color;
-    color: #fff;
+    color: $color-2;
     font-weight: 500;
     font-size: 20px;
     line-height: 60px;
@@ -46,10 +42,14 @@ a:visited {
     border-radius: 30px;
     text-transform: capitalize;
     border: none;
+    position: relative;
+    z-index: 2;
 
     &:hover {
-        background-color: #fff;
         color: $main-color;
+        &::before {
+            animation: slideIn 0.4s ease forwards;
+        }
     }
 
     @include md {
@@ -57,11 +57,44 @@ a:visited {
         line-height: 50px;
         height: 50px;
     }
+
+    &::before {
+        content: "";
+        background-color: $third-color;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 27px;
+        z-index: -1;
+        opacity: 0;
+
+        @keyframes slideIn {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .section-heading {
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    @include md {
+        width: 90%;
+    }
+    @include sm {
+        width: 100%;
+    }
 }
+
 .section-heading h2 {
     color: $main-color;
     font-weight: 700;
@@ -75,5 +108,49 @@ a:visited {
 .col-xxs-12 {
     @include xxs {
         width: 100%;
+    }
+}
+
+.preloader {
+    background-color: $white;
+    position: fixed;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.back__to__top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #d9cbb8;
+    border-radius: 10px;
+    font-size: 25px;
+    color: $black;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 0 0 20px 0 rgb(51 51 51 / 15%);
+    z-index: 111;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    pointer-events: none;
+
+    &.active {
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    @include xxs {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
     }
 }
